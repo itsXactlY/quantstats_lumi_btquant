@@ -3,7 +3,7 @@ import quantstats_lumi.reports as reports
 import os
 
 # Create a returns series with a DatetimeIndex covering 2 years (24 months)
-index = pd.date_range(start='2022-01-31', periods=24, freq='M')
+index = pd.date_range(start='2022-01-31', periods=24, freq='ME')
 strategy_returns = pd.Series(
     [0.02, -0.01, 0.03, -0.01, 0.02, 0.01, -0.01, 0.015, 0.01, -0.005, 0.02, 0.01,
      0.015, -0.01, 0.02, 0.01, -0.01, 0.02, 0.01, -0.01, 0.015, 0.01, -0.005, 0.02],
